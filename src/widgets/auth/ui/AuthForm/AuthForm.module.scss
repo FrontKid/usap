@@ -1,0 +1,31 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.form {
+  margin-bottom: fun.to-rem(15);
+}
+
+.inputEmail {
+  margin-bottom: fun.to-rem(13);
+}
+
+.inputPassword {
+  margin-bottom: fun.to-rem(25);
+}
+
+.forgotPassword {
+  color: var.$blue-violet;
+  font-weight: bold;
+  display: block;
+  font-size: fun.to-rem(13);
+  margin-bottom: fun.to-rem(8);
+}
+
+.signUpWrapper {
+  color: var.$black;
+  margin-top: fun.to-rem(18);
+
+  button {
+    margin-left: fun.to-rem(5);
+  }
+}

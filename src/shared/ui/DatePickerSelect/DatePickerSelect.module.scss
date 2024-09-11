@@ -1,0 +1,37 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wrapperDatePicker {
+  width: 100%;
+}
+
+.title {
+  font-size: fun.to-rem(14);
+}
+
+.datePicker {
+  border-radius: fun.to-rem(12);
+  padding: fun.to-rem(11) fun.to-rem(24);
+  font-weight: 700;
+  font-size: fun.to-rem(14);
+  border: fun.to-rem(1) solid var.$white-grey-border;
+  width: 100%;
+
+  &:disabled {
+    background-color: var.$grey-light;
+  }
+}
+
+.calendarIcon {
+  position: absolute;
+  right: fun.to-rem(24);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: fun.to-rem(14);
+}

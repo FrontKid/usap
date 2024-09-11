@@ -1,0 +1,35 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.selectInner {
+  position: relative;
+}
+
+.select {
+  padding: fun.to-rem(12) fun.to-rem(30) fun.to-rem(12) fun.to-rem(20);
+  border-radius: fun.to-rem(12);
+  background-color: transparent;
+  border: fun.to-rem(1) solid var.$white-grey-border;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: var.$grey-light;
+  }
+}
+
+.arrowDown {
+  position: absolute;
+  right: fun.to-rem(10);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: fun.to-rem(20);
+}

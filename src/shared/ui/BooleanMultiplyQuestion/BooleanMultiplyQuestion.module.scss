@@ -1,0 +1,12 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.buttonWrapper {
+  width: 100%;
+}
+
+.button {
+  margin-bottom: fun.to-rem(5);
+  border-radius: fun.to-rem(12);
+  padding-block: fun.to-rem(8);
+}

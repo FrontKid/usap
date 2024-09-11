@@ -1,0 +1,78 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: fun.to-rem(10);
+  font-size: fun.to-rem(15);
+
+  .title,
+  .subtitle {
+    font-size: inherit;
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+.cardButtons {
+  display: flex;
+  gap: fun.to-rem(10);
+
+  .cardButton {
+    padding: fun.to-rem(8) fun.to-rem(12) !important;
+    border-radius: fun.to-rem(20);
+    display: flex;
+    align-items: center;
+    font-size: fun.to-rem(14);
+    gap: fun.to-rem(5);
+
+    &:nth-child(3),
+    &:nth-child(2) {
+      color: var.$blue;
+      background-color: #eff6ff;
+    }
+  }
+}
+
+.isButtonActive {
+  background-color: transparent !important;
+  opacity: 0.5;
+}
+
+.infoCard {
+  min-width: fun.to-rem(990);
+  padding-block: fun.to-rem(100);
+
+  .infoCardTextWithLoading {
+    position: relative;
+    padding-right: fun.to-rem(30);
+
+    .infoCardLoading {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  p {
+    width: fit-content;
+    margin: auto;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: fun.to-rem(30);
+  }
+
+  button {
+    background-color: transparent;
+    color: #0d18a0;
+    font-weight: 700;
+    text-decoration: solid;
+  }
+}

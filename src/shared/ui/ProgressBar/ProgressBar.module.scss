@@ -1,0 +1,41 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.contentWrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fun.to-rem(90);
+  color: var.$grey-black;
+}
+
+.box {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.greyCircle {
+  color: var.$white-grey !important;
+  position: absolute;
+  left: 0;
+}
+
+.check {
+  position: absolute;
+  z-index: 2;
+  color: #2563eb;
+}
+
+.percent {
+  position: absolute;
+  top: 53%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  font-family: inherit !important;
+  font-weight: 500 !important;
+}
+
+.title {
+  text-align: center;
+}

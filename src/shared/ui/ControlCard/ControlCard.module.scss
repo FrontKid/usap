@@ -1,0 +1,10 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.card {
+  width: 100%;
+  border-radius: fun.to-rem(20);
+  border: fun.to-rem(1) solid #dddddd;
+  padding: fun.to-rem(20);
+  align-self: baseline;
+}

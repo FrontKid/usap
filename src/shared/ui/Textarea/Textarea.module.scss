@@ -1,0 +1,37 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.labelWrapper {
+  // width: 100%;
+}
+
+.label {
+  margin-bottom: fun.to-rem(3);
+  display: inline-block;
+}
+
+.textarea {
+  width: 100%;
+  min-height: fun.to-rem(90);
+  resize: none;
+  padding: fun.to-rem(12);
+  border: fun.to-rem(1) solid #f1f1f1;
+  font-size: fun.to-rem(13);
+  border-radius: fun.to-rem(12);
+  color: rgba(0, 0, 0, 0.87);
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+
+  &:focus {
+    border-color: var.$black;
+  }
+
+  &:disabled {
+    background-color: var.$grey-light;
+    color: var.$grey;
+    font-weight: 700;
+  }
+}

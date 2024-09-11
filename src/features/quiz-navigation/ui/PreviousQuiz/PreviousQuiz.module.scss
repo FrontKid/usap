@@ -1,0 +1,15 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.buttonBack {
+  display: flex;
+  align-items: center;
+  gap: fun.to-rem(8);
+  padding: fun.to-rem(12) !important;
+  background-color: transparent !important;
+  border-color: var.$blue !important;
+  color: var.$blue !important;
+  border-width: fun.to-rem(2) !important;
+  border-radius: fun.to-rem(100) !important;
+  font-weight: bold !important;
+}

@@ -1,0 +1,62 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.authLogo {
+  margin-bottom: fun.to-rem(50);
+  margin-left: fun.to-rem(25);
+  text-align: center;
+
+  span {
+    color: var.$blue-dark;
+  }
+}
+
+.authWrapper {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authPage {
+  max-width: fun.to-rem(460);
+  width: 100%;
+  padding: 0 fun.to-rem(20);
+}
+
+.formWrapper {
+  max-width: fun.to-rem(340);
+  margin: auto;
+}
+
+.title {
+  font-size: fun.to-rem(24);
+  text-align: center;
+  margin-bottom: fun.to-rem(40);
+  color: var.$black;
+  font-weight: 700;
+}
+
+.or {
+  display: block;
+  text-align: center;
+  color: var.$grey;
+}
+
+.alternativeWrapper {
+  margin-top: fun.to-rem(20);
+}
+
+.facebookButton {
+  margin-bottom: fun.to-rem(10);
+}
+
+.policyWarn {
+  display: block;
+  padding: fun.to-rem(10);
+  font-size: fun.to-rem(12);
+  color: #0000007b;
+  background-color: #eee;
+  text-align: center;
+  margin-top: fun.to-rem(30);
+}

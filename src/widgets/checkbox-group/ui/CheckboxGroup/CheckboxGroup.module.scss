@@ -1,0 +1,59 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: fun.to-rem(20);
+  padding: fun.to-rem(20);
+  max-width: fun.to-rem(450);
+}
+
+.label {
+  padding: fun.to-rem(12);
+  border-radius: fun.to-rem(20);
+  border: fun.to-rem(1) solid var.$white-grey-border;
+  box-shadow:
+    #000000 0 0 0 0,
+    #000000 0 0 0 0,
+    var.$white-grey-border fun.to-rem(2) fun.to-rem(2) fun.to-rem(4) 0;
+  cursor: pointer;
+  text-align: center;
+  width: fun.to-rem(200);
+  height: fun.to-rem(160);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: fun.to-rem(5);
+}
+
+.icon {
+  width: fun.to-rem(48);
+  height: fun.to-rem(48);
+  flex-shrink: 0;
+}
+
+.text {
+  color: #000000;
+  font-size: fun.to-rem(13);
+  font-weight: 700;
+}
+
+.input {
+  display: none;
+}
+
+.input:checked + .label {
+  background-color: #eff6ff;
+  border: none;
+
+  span {
+    color: var.$blue-light-link;
+  }
+
+  .icon {
+    color: var.$blue-light-link;
+  }
+}

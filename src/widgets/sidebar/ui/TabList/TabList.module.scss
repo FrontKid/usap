@@ -1,0 +1,10 @@
+.list {
+  overflow: scroll;
+  flex-grow: 1;
+  -ms-overflow-style: none; /* Скрывает полосу прокрутки в IE и Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

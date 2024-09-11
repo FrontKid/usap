@@ -1,0 +1,48 @@
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+@use '../../../../app/styles/helpers/variables.scss' as var;
+
+.title {
+  color: var.$black;
+  font-size: fun.to-rem(20);
+  font-weight: 700;
+
+  margin-bottom: fun.to-rem(50);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: fun.to-rem(90);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: fun.to-rem(20);
+}
+
+.itemTitle {
+  color: var.$black;
+  font-weight: 700;
+  font-size: fun.to-rem(16);
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: fun.to-rem(10);
+}
+
+.buttonComplete {
+  border-radius: fun.to-rem(100);
+  background-color: var.$green-white;
+  color: var.$green;
+  font-size: fun.to-rem(14);
+  font-weight: 700;
+  padding: fun.to-rem(5) fun.to-rem(15);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var.$white-grey-2;
+  }
+}

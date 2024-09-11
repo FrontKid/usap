@@ -1,0 +1,29 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.card {
+  max-width: fun.to-rem(500);
+  text-align: center;
+  margin: auto;
+  border-radius: fun.to-rem(12);
+  background-color: var.$white-blue;
+  padding: fun.to-rem(20);
+}
+
+.icon {
+  margin-bottom: fun.to-rem(22);
+}
+
+.contentBox {
+  color: var.$blue-dark;
+
+  h2 {
+    font-weight: 700;
+    font-size: fun.to-rem(22);
+    margin-bottom: fun.to-rem(12);
+  }
+
+  p {
+    font-size: fun.to-rem(15);
+  }
+}

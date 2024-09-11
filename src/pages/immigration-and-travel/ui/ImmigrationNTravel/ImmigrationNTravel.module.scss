@@ -1,0 +1,97 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.title {
+  font-size: fun.to-rem(24);
+  margin-bottom: fun.to-rem(100);
+  text-align: center;
+  color: var.$blue-dark;
+  font-weight: 500;
+}
+
+.subTitle {
+  font-size: fun.to-rem(20);
+}
+
+.contentWraper {
+  max-width: fun.to-rem(900);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: fun.to-rem(35) fun.to-rem(15);
+
+  button {
+    border-radius: fun.to-rem(12);
+  }
+
+  button,
+  select {
+    padding-block: fun.to-rem(12);
+  }
+}
+
+.smallContainer {
+  max-width: fun.to-rem(300);
+  margin: auto;
+  font-size: fun.to-rem(14);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.containerCenter {
+  display: flex;
+  justify-content: space-between;
+  max-width: fun.to-rem(600);
+  margin: auto;
+  margin-top: fun.to-rem(30);
+
+  input {
+    max-width: fun.to-rem(250);
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: fun.to-rem(15);
+  max-width: fun.to-rem(310);
+}
+
+.containerDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fun.to-rem(300);
+  margin: auto;
+
+  gap: fun.to-rem(25);
+}
+
+// arrival Documents
+
+.arrivalDocumentsTitle {
+  margin-top: fun.to-rem(40);
+}
+
+.isNameExactOnI94 {
+  margin: 0 auto fun.to-rem(40);
+}
+
+.howDidYouBecomeUsCitizenWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: fun.to-rem(20);
+}
+
+.fieldOfficeText {
+  color: var.$black;
+  font-weight: 700;
+  text-align: center;
+  max-width: fun.to-rem(840);
+  margin: 0 auto fun.to-rem(100);
+}

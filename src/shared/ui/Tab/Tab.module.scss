@@ -1,0 +1,38 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.item {
+  font-weight: 500;
+  padding: fun.to-rem(16) fun.to-rem(8);
+
+  position: relative;
+
+  &.homeHr::after {
+    position: absolute;
+    content: '';
+    background-color: var.$grey-blue;
+    width: 100%;
+    height: fun.to-rem(0.8);
+
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.link {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% + fun.to-rem(3));
+  transform: translateY(-50%);
+}
+
+.title {
+  margin-left: fun.to-rem(32);
+}
+
+.isActive {
+  color: var.$white !important;
+}

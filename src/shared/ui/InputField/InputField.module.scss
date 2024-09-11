@@ -1,0 +1,42 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+@use '../../../app/styles/helpers/mixins.scss' as mix;
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  padding: fun.to-rem(12) fun.to-rem(14);
+  border: fun.to-rem(1) solid #f1f1f1;
+  font-size: fun.to-rem(13);
+  width: 100%;
+  border-radius: fun.to-rem(12);
+  color: rgba(0, 0, 0, 0.87);
+  outline: none;
+  @include mix.smooth(border-color);
+
+  &:focus {
+    border-color: var.$black;
+  }
+
+  &.errorActive {
+    border-color: var.$error;
+  }
+
+  &:disabled {
+    background-color: var.$grey-light;
+    color: var.$grey;
+    font-weight: 700;
+  }
+}
+
+.error {
+  color: var.$error;
+  font-size: fun.to-rem(12);
+}
+
+.isRounded {
+  border-radius: fun.to-rem(12);
+}

@@ -1,0 +1,65 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.aside {
+  max-width: fun.to-rem(300);
+  background-color: var.$blue-dark;
+  grid-area: sidebar;
+  padding: 0 fun.to-rem(8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  padding: fun.to-rem(14) 0;
+  margin-left: fun.to-rem(8);
+}
+
+.logoutContainer {
+  padding: fun.to-rem(15) fun.to-rem(8);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: var.$grey-blue;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: fun.to-rem(0.8);
+  }
+}
+
+.adminPanel {
+  align-self: flex-end;
+
+  svg {
+    display: block;
+  }
+}
+
+.logOut {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: fun.to-rem(20);
+  font-size: fun.to-rem(14);
+  color: var.$primary;
+  font-weight: 400;
+}
+
+.logOutText {
+  position: relative;
+  padding-left: fun.to-rem(30);
+}
+
+.logOutIcon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

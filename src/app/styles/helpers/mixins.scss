@@ -1,0 +1,3 @@
+@mixin smooth($object, $sec: 0.5s, $func: ease-in-out) {
+  transition: $object $sec $func 0s;
+}

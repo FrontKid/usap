@@ -1,0 +1,40 @@
+@use '../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.footer {
+  grid-area: footer;
+  color: white;
+  padding: fun.to-rem(20);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: fun.to-rem(0.8);
+    background-color: var.$white-grey;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonClear {
+  border-radius: fun.to-rem(100) !important;
+  font-weight: bold !important;
+}
+
+.buttonClear {
+  background-color: var.$orange-dark !important;
+  max-width: fun.to-rem(107);
+}
+
+.navigationContainer {
+  display: flex;
+  gap: fun.to-rem(20);
+}

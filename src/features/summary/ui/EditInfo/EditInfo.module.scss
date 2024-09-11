@@ -1,0 +1,5 @@
+@use '../../../../app/styles/helpers/functions.scss' as fun;
+
+.buttonEdit {
+  gap: fun.to-rem(5);
+}

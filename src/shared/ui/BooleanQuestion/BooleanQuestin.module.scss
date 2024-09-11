@@ -1,0 +1,23 @@
+@use '../../../app/styles/helpers/variables.scss' as var;
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.questionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: fun.to-rem(15);
+  max-width: fun.to-rem(284);
+  margin: auto;
+}
+
+.title {
+  color: var.$primary;
+  text-align: left;
+  font-weight: 300;
+}
+
+.button {
+  border-radius: fun.to-rem(12);
+  font-size: fun.to-rem(13);
+  font-weight: 700;
+  line-height: fun.to-rem(3);
+}

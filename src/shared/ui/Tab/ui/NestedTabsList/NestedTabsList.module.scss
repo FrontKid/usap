@@ -1,0 +1,21 @@
+@use '../../../../../app/styles/helpers/variables.scss' as var;
+@use '../../../../../app/styles/helpers/functions.scss' as fun;
+
+.tabsList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: fun.to-rem(40);
+  margin-top: fun.to-rem(20);
+  gap: fun.to-rem(20);
+}
+
+.tabsButton {
+  font-size: fun.to-rem(14) !important;
+  color: var.$primary !important;
+  font-weight: 400 !important;
+}
+
+.isActive {
+  color: var.$white !important;
+}

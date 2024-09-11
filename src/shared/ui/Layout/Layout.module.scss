@@ -1,0 +1,21 @@
+@use '../../../app/styles/helpers/functions.scss' as fun;
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: fun.to-rem(300) 1fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar content'
+    'sidebar footer';
+  max-height: 100dvh;
+  height: 100%;
+}
+
+.contentWrapper {
+  grid-area: content;
+  padding: fun.to-rem(20) fun.to-rem(32);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
